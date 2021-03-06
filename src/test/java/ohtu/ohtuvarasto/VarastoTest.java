@@ -134,7 +134,7 @@ public class VarastoTest {
 
 		Varasto isoVarasto = new Varasto(-20, 5);
 
-		// varaston luonti onnistui
+		// negatiivinen tilavuus ei toimi
 		assertEquals(0.0, isoVarasto.getTilavuus(), vertailuTarkkuus);
 		assertEquals(-20.0, isoVarasto.getSaldo(), vertailuTarkkuus);
 	}
@@ -144,7 +144,7 @@ public class VarastoTest {
 
 		Varasto isoVarasto = new Varasto(10, 25);
 
-		// varaston luonti onnistui
+		// isompi saldo
 		assertEquals(10.0, isoVarasto.getTilavuus(), vertailuTarkkuus);
 		assertEquals(10.0, isoVarasto.getSaldo(), vertailuTarkkuus);
 	}
@@ -154,7 +154,7 @@ public class VarastoTest {
 
 		Varasto isoVarasto = new Varasto(20, -5);
 
-		// varaston luonti onnistui
+		// negatiivinen saldo
 		assertEquals(20.0, isoVarasto.getTilavuus(), vertailuTarkkuus);
 		assertEquals(0.0, isoVarasto.getSaldo(), vertailuTarkkuus);
 	}
