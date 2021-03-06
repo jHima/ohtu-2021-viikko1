@@ -27,12 +27,12 @@ public class VarastoTest {
 
 	@Test
 	public void uudellaVarastollaOikeaTilavuus() {
-		assertEquals(10, varasto.getTilavuus(), vertailuTarkkuus);
+		assertEquals(100, varasto.getTilavuus(), vertailuTarkkuus);
 	}
 
 	@Test
 	public void lisaysLisaaSaldoa() {
-		varasto.lisaaVarastoon(8);
+		varasto.lisaaVarastoon(100);
 
 		// saldon pitäisi olla sama kun lisätty määrä
 		assertEquals(8, varasto.getSaldo(), vertailuTarkkuus);
